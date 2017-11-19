@@ -1,0 +1,829 @@
+body {
+    margin:0;
+    background: url(images/TastyRecipes.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(143,188,143,.8);
+    font-size: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.8);
+    font-family: "Times New Roman", Times, serif;
+}
+
+li {
+    float: left;
+}
+
+.tastyrecipes {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10px; 
+    font-family: "Times New Roman", Times, serif;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(143,188,143,.9);
+    font-family: "Times New Roman", Times, serif;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(143,188,143,.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(143,188,143,.9);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li a:hover, .dropdownSESSION:hover .dropbtn {
+    background-color: rgba(143,188,143,.9);
+    font-family: "Times New Roman", Times, serif;
+}
+
+li.dropdownSESSION {
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(143,188,143,.9);
+}
+
+.dropdownSESSION:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: floralwhite;
+    font-size: 40px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    color: darkslategrey;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.transbox h3 {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    color: darkslategrey;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.transbox h4 {
+    margin-left: 5%;
+    color: darkslategrey;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.transbox hr {
+    border: solid 1px darkslategrey;
+    width: 90%;
+}
+
+.transbox {
+    width: 80%;
+    overflow: auto;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom: 10%;
+    background-color: rgba(255,255,255,0.9);
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+    border-radius: 5px;
+}
+
+.logintransbox {
+    margin-top: 0%;
+    margin-left: 30%;
+    width: 30%;
+    overflow: auto;
+    padding: 5%;
+    background-color: rgba(255,255,255,0.9);
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+    border-radius: 5px;
+}
+
+.loggedintransbox {
+    margin: auto;
+    background-color: rgba(255,255,255,0.9);
+    width: 50%;
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding-bottom: 5%;
+}
+
+.loggedintransbox h2 {
+    text-align: center;
+}
+
+.transbox p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    color: darkslategrey;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.transbox a {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkslategrey;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+.transbox img {
+    height: 200px;
+    width: 200px;
+    float: right;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.transbox-calendar {
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(255,255,255,0.9);
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+    }
+
+#commentbox {
+    padding-top: 1%;
+    padding-left: 1%;
+    margin-top:1%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    width: 90%;
+    overflow: auto;
+    color: darkslategrey;
+}
+
+#commentbox hr {
+    width: 100%;
+}
+
+#commentbox input[type=submit] {
+    width: 20%;
+    background-color: indianred;
+    color: white;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#commentbox input[type=submit]:hover {
+    background-color: #b85252;
+}
+
+#commentboxlast {
+    padding-top: 1%;
+    margin-top:1%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    width: 90%;
+    height: 66px;  
+}
+
+#commentbox p {
+    font-size: 15px;
+    margin-left: 1%;
+    color: darkslategrey;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#commentboxlast p {
+    font-size: 15px;
+    margin-left: 1%;
+    color: darkslategrey;
+    font-family: "Times New Roman", Times, serif;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.comments {
+    color: darkslategrey;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+    padding-bottom: 3%;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.infotext div {
+    width: 362px;
+    height: 15px;
+    margin-top: 10%;
+    object-position: center;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;
+    margin-left:10%;
+}
+
+#text {
+    text-align: center;
+    background-color: white;
+    clear: left;
+    padding-top: 0.3%;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.nextrow {
+    clear: left; 
+    background-color: white;
+    width: 50px;
+    height: 30px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;
+    margin-left:10%;
+}
+
+.days {
+    background-color: white;
+    width: 50px;
+    height: 30px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;    
+}
+
+.oct30 {
+    clear: left; 
+    background-color: white;
+    width: 50px;
+    height: 30px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkgrey;
+    margin-left:10%;
+}
+
+.anothermonth {
+    background-color: white;
+    width: 50px;
+    height: 30px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkgrey;
+}
+
+.meatballs {
+    width: 50px;
+    height: 30px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;
+    background: url(images/meatballs.jpg); 
+    background-size: cover;   
+}
+
+.pancakes {
+    width: 50px;
+    height: 30px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;
+    background: url(images/pancakes1.png); 
+    background-size: cover; 
+}
+
+.lastrow {
+    background-color: white;
+    width: 50px;
+    height: 30px;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;
+    background-color: white;
+    margin-bottom:10%;
+}
+
+.calendarcolumn div {
+    width: 50px;
+    height: 15px;
+    padding-top: 0.3%;
+    float: left;
+    border: 1px solid darkslategrey;
+    color: darkslategrey;
+}
+
+#sunday {
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#monday {
+    text-align: center;
+    background-color: white;
+    clear: left;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 10%;
+}
+
+#tuesday {
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#wednesday {
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#thursday {
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#friday {
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#saturday {
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+    
+@media screen and (min-width: 480px) and (max-width: 858px) {
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    .transbox p {
+        font-size: 20px;
+    }
+    
+    .transbox a {
+        font-size: 20px;
+    }
+    
+    ul {
+        font-size: 18px;
+    }
+    
+    .tastyrecipes {
+        font-size: 18px; 
+    }
+    
+    .calendarcolumn div {
+        width: 50px;
+        height: 30px;
+    }
+    
+    .lastrow {
+        width: 50px;
+        height: 30px;
+    }
+    
+    .nextrow {
+        width: 50px;
+        height: 30px;
+        margin-left:5%;
+}
+
+    .days {
+        width: 50px;
+        height: 30px;  
+    }
+
+    .oct30 {
+        width: 50px;
+        height: 30px;
+        margin-left:5%;
+    }
+
+    .anothermonth {
+        background-color: white;
+        width: 50px;
+        height: 30px;
+    }
+
+    .meatballs {
+        width: 50px;
+        height: 30px;
+    }
+
+    .pancakes {
+        width: 50px;
+        height: 30px;
+    }
+    
+    .infotext div {
+        width: 362px;
+        height: 15px;
+        margin-left:5%;
+    }
+
+    #monday {
+        margin-left: 5%;
+    }
+    
+    .transbox {
+        width: 80%;
+    }
+    
+    #commentbox {
+        width: 90%;
+        height: 110px;  
+    }
+
+    #commentboxlast {
+        width: 90%;
+        height: 80px;  
+    }    
+}
+
+@media screen and (min-width: 859px) {
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    .transbox p {
+        font-size: 20px;
+    }
+    
+    .transbox a {
+        font-size: 20px;
+    }
+    
+    ul {
+        font-size: 18px;
+    }
+    
+    .tastyrecipes {
+        font-size: 18px; 
+    }
+    
+    .calendarcolumn div {
+        width: 90px;
+        height: 20px;
+    }
+    
+    .lastrow {
+        width: 90px;
+        height: 70px;
+    }
+    
+    .nextrow {
+        width: 90px;
+        height: 70px;
+        margin-left:25%;
+    }
+
+    .days {
+        width: 90px;
+        height: 70px;   
+    }
+
+    .oct30 {
+        width: 90px;
+        height: 70px;
+        margin-left:25%;
+    }
+
+    .anothermonth {
+        background-color: white;
+        width: 90px;
+        height: 70px;
+    }
+
+    .meatballs {
+        width: 90px;
+        height: 70px; 
+    }
+
+    .pancakes {
+        width: 90px;
+        height: 70px;
+    }
+    
+    .infotext div {
+        width: 642px;
+        height: 20px;
+        margin-left:25%;
+    }
+    
+    #monday {
+        margin-left: 25%;
+    }
+    
+    .transbox {
+        width: 80%;
+    }
+    
+    .transbox img {
+        height: 300px;
+        width: 300px;
+    }
+    
+    .commentbox {
+        width: 90%;
+        height: 90px;  
+    }
+
+    #commentboxlast {
+        width: 90%;
+        height: 65px;  
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    .transbox p {
+        font-size: 15px;
+    }
+    
+    .transbox a {
+        font-size: 15px;
+    }
+    
+    ul {
+        font-size: 15px;
+    }
+    
+    .tastyrecipes {
+        font-size: 15px; 
+    }
+    
+    .calendarcolumn div {
+        width: 50px;
+        height: 30px;
+    }
+    
+    .lastrow {
+        width: 50px;
+        height: 30px;
+    }
+    
+    .nextrow {
+        width: 50px;
+        height: 30px;
+        margin-left:3%;
+    }
+
+    .days {
+        width: 50px;
+        height: 30px;  
+    }
+
+    .oct30 {
+        width: 50px;
+        height: 30px;
+        margin-left:3%;
+    }
+
+    .anothermonth {
+        background-color: white;
+        width: 50px;
+        height: 30px;
+    }
+
+    .meatballs {
+        width: 50px;
+        height: 30px;
+    }
+
+    .pancakes {
+        width: 50px;
+        height: 30px;
+    }
+    
+    .infotext div {
+        width: 362px;
+        height: 15px;
+        margin-left:3%;
+    }
+
+    #monday {
+        margin-left: 3%;
+    }
+    
+    .transbox {
+        margin-bottom: 10%;
+    }
+    
+    .transbox img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .commentbox {
+        width: 90%;
+        height: 170px;  
+    }
+
+    #commentboxlast {
+        width: 90%;
+        height: 105px;  
+    }
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    color: darkslategrey;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container p{
+    font-style: italic;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.login {
+    float: right;
+}
+
+
+
+
